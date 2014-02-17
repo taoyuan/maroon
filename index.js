@@ -1,1 +1,1 @@
-module.exports = exports = require('./lib/naf');
+module.exports = exports = require('./lib/maroon');

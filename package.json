@@ -1,10 +1,10 @@
 {
-  "name": "naf",
+  "name": "maroon",
   "version": "0.0.1",
-  "description": "Node Application Framework inspired by CompoundJS.",
+  "description": "A node application framework inspired by compound.js.",
   "main": "index.js",
   "bin": {
-    "naf": "bin/naf.js"
+    "maroon": "bin/maroon.js"
   },
   "scripts": {
     "test": "node_modules/mocha/bin/mocha -r test/init.js test/*.test.js"
@@ -22,12 +22,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/taoyuan/naf.git"
+    "url": "https://github.com/taoyuan/maroon.git"
   },
   "author": "Tao Yuan",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/taoyuan/naf/issues"
+    "url": "https://github.com/taoyuan/maroon/issues"
   },
-  "homepage": "https://github.com/taoyuan/naf"
+  "homepage": "https://github.com/taoyuan/maroon"
 }

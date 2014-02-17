@@ -5,8 +5,8 @@ process.env.NODE_ENV = 'test';
 
 exports.t = chai.assert;
 
-exports.getNaf = function() {
-    var naf = require('../').create({});
-    naf.enable('quiet');
-    return naf;
+exports.getMaroon = function() {
+    var maroon = require('../').create({});
+    maroon.enable('quiet');
+    return maroon;
 };

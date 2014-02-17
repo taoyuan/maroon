@@ -1,4 +1,4 @@
-naf
+maroon
 ===
 
-Node Application Framework inspired by CompoundJS.
+A node application framework inspired by compound.js.

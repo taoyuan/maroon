@@ -13,14 +13,14 @@ try {
     instantiateApp = null;
 }
 
-var app, naf;
+var app, maroon;
 if (typeof instantiateApp === 'function') {
     app = instantiateApp();
-    naf = app['naf'];
+    maroon = app['maroon'];
 }
-if (!naf) {
-    var Naf = require('naf').Naf;
-    naf = new Naf;
+if (!maroon) {
+    var Maroon = require('maroon').Maroon;
+    maroon = new Maroon;
 }
 
 var args = process.argv.slice(2);
@@ -34,10 +34,10 @@ process.nextTick(function () {
         case 'help':
             if (command && command !== 'help' && command !== 'h') {
                 var found = false;
-                Object.keys(naf.tools).forEach(function (cmd) {
-                    var c = naf.tools[cmd];
+                Object.keys(maroon.tools).forEach(function (cmd) {
+                    var c = maroon.tools[cmd];
                     if (cmd === command || (c && c.help && c.help.shortcut === command)) {
-                        exitAfterAction = c(naf, args);
+                        exitAfterAction = c(maroon, args);
                         found = true;
                     }
                 });
@@ -52,19 +52,19 @@ process.nextTick(function () {
                 return;
             }
             var help = [
-                'Usage: naf command [argument(s)]\n',
+                'Usage: maroon command [argument(s)]\n',
                 'Commands:'
             ];
             var commands = [
-                ['h', 'help [topic]',    'Display naf man page']
+                ['h', 'help [topic]',    'Display maroon man page']
             ];
-            Object.keys(naf.tools).forEach(function (cmd) {
-                var h = naf.tools[cmd].help;
+            Object.keys(maroon.tools).forEach(function (cmd) {
+                var h = maroon.tools[cmd].help;
                 if (h && h.usage) {
                     commands.push([h.shortcut || '', h.usage, h.description]);
                 }
             });
-            var maxLen = 0, addSpaces = naf.utils.addSpaces;
+            var maxLen = 0, addSpaces = maroon.utils.addSpaces;
             commands.forEach(function (cmd) {
                 if (cmd[1].length > maxLen) {
                     maxLen = cmd[1].length;
@@ -73,14 +73,14 @@ process.nextTick(function () {
             commands.forEach(function (cmd) {
                 help.push('  ' + addSpaces(cmd[0] + ',', 4) + addSpaces(cmd[1], maxLen + 1) + cmd[2]);
             });
-//            naf.generators.init(naf, args);
+//            maroon.generators.init(maroon, args);
 //            help.push('\nAvailable generators:\n');
-//            help.push('  ' + naf.generators.list());
+//            help.push('  ' + maroon.generators.list());
             sys.puts(help.join('\n'));
             break;
 
         case '--version':
-            console.log(naf.version);
+            console.log(maroon.version);
             break;
     }
 

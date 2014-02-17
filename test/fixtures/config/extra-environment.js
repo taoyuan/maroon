@@ -1,3 +1,3 @@
-module.exports = function(naf) {
-    naf.set('foo', 'bar');
+module.exports = function(maroon) {
+    maroon.set('foo', 'bar');
 };
