@@ -1,34 +1,33 @@
 {
-    "name": "naf",
-    "version": "0.0.1",
-    "description": "Node Application Framework inspired by CompoundJS.",
-    "main": "index.js",
-    "bin": {
-        "naf": "bin/naf.js"
-    },
-    "scripts": {
-        "test": "node_modules/mocha/bin/_mocha -r test/init.js test/*.test.js"
-    },
-    "dependencies": {
-        "eventemitter2": "~0.4.13",
-        "yaml-js": "latest",
-        "lodash": "~2.4.1",
-        "logs": "latest"
-    },
-    "devDependencies": {
-        "debug2": "latest",
-        "chai": "~1.9.0",
-        "mocha": "~1.17.1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/taoyuan/naf.git"
-    },
-    "author": "Tao Yuan",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/taoyuan/naf/issues"
-    },
-    "homepage": "https://github.com/taoyuan/naf"
-
+  "name": "naf",
+  "version": "0.0.1",
+  "description": "Node Application Framework inspired by CompoundJS.",
+  "main": "index.js",
+  "bin": {
+    "naf": "bin/naf.js"
+  },
+  "scripts": {
+    "test": "node_modules/mocha/bin/mocha -r test/init.js test/*.test.js"
+  },
+  "dependencies": {
+    "eventemitter2": "~0.4.13",
+    "yaml-js": "latest",
+    "lodash": "~2.4.1",
+    "logs": "latest"
+  },
+  "devDependencies": {
+    "debug2": "latest",
+    "chai": "~1.9.0",
+    "mocha": "~1.17.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/taoyuan/naf.git"
+  },
+  "author": "Tao Yuan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/taoyuan/naf/issues"
+  },
+  "homepage": "https://github.com/taoyuan/naf"
 }
