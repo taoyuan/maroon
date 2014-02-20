@@ -11,4 +11,5 @@ describe('maroon.loadConfigs', function() {
         t.equal(maroon.get('foo'), 'bar');
         t.notOk(maroon.get('hello'));
     });
+    
 });
