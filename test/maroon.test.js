@@ -7,6 +7,6 @@ describe('maroon', function () {
         var app = {};
         var m = maroon.create(app, { forward: true });
         m.set('message', 'hello');
-        t.equal('hello', app.get('message'));
+        t.equal('hello', app.set('message'));
     });
 });
