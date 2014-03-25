@@ -1,6 +1,6 @@
 var s = require('./support');
 var t = s.t;
-var maroon = require('../')
+var maroon = require('../');
 
 describe('maroon', function () {
     it('should forward configuration functions', function () {
