@@ -1,3 +1,3 @@
 module.exports = function(maroon) {
-    maroon.set('hello', 'world');
+    maroon.conf.set('hello', 'world');
 };

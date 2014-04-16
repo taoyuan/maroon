@@ -1,3 +1,3 @@
 module.exports = function(maroon) {
-    maroon.set('foo', 'bar');
+    maroon.conf.set('foo', 'bar');
 };
